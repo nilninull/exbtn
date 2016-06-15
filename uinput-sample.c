@@ -20,7 +20,6 @@ main(void)
    int                    fd;
    struct uinput_user_dev uidev;
    struct input_event     ev;
-   int                    dx, dy;
    int                    i;
 
    fd = open(UINPUT_PATH, O_WRONLY | O_NONBLOCK);
@@ -60,9 +59,14 @@ main(void)
    if(ioctl(fd, UI_DEV_CREATE) < 0)
       die("error: ioctl");
    
-   sleep(2);
+   printf("wait 5 seconds\n");
+   sleep(5);
+   printf("start uinput sample\n");
+   
     
    for(i = BTN_MISC; i <= BTN_TASK; ++i) {
+      printf("button code is 0x%04x\n", i);
+      
 
       memset(&ev, 0, sizeof(struct input_event));
       ev.type = EV_KEY;
