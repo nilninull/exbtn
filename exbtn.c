@@ -76,7 +76,7 @@ int uinput_initialize()
       die("error: ioctl");
 
    memset(&uidev, 0, sizeof(uidev));
-   snprintf(uidev.name, UINPUT_MAX_NAME_SIZE, "uinput-sample");
+   snprintf(uidev.name, UINPUT_MAX_NAME_SIZE, "Extended Mouse Button Mapper");
    uidev.id.bustype = BUS_USB;
    uidev.id.vendor  = 0x1;
    uidev.id.product = 0x1;
