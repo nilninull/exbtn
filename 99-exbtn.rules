@@ -1,6 +1,2 @@
-#ACTION=="add", SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="056e", ENV{ID_MODEL_ID}=="00e6", RUN+="/sbin/rc-service exbtn start" 
-#ACTION=="remove", SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="056e", ENV{ID_MODEL_ID}=="00e6", RUN+="/sbin/rc-service exbtn stop" 
-
-ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="056e", ATTRS{idProduct}=="00e6", RUN+="/sbin/rc-service exbtn start" 
-ACTION=="remove", SUBSYSTEMS=="usb", ATTRS{idVendor}=="056e", ATTRS{idProduct}=="00e6", RUN+="/sbin/rc-service exbtn stop" 
-
+ACTION=="add", SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="056e", ENV{ID_MODEL_ID}=="00e6", RUN+="/sbin/rc-service exbtn start" 
+ACTION=="remove", SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="056e", ENV{ID_MODEL_ID}=="00e6", RUN+="/sbin/rc-service exbtn stop" 
