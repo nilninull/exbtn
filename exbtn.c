@@ -1,3 +1,11 @@
+/*
+ * nilninull (nilninull @ gmail.com)
+ * 6/15/2016
+ *
+ * This program has starting point at HIDAPI sample program.
+ * Which licence should I use?
+ */
+
 /*******************************************************
  Windows HID simplification
 

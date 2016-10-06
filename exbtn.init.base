@@ -1,5 +1,5 @@
 #!/sbin/openrc-run
 
 pidfile='/var/run/exbtn.pid'
-command='/usr/local/sbin/exbtn'
+command='%%%PREFIX%%%/sbin/exbtn'
 start_stop_daemon_args='--background --make-pidfile'
